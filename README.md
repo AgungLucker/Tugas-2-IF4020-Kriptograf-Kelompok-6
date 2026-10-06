@@ -19,5 +19,5 @@ Untuk bantuan CLI: `uv run python -m app --help`.
 ## Pengujian
 
 ```sh
-uv run pytest -q
+uv run python -u tests/test_script.py | tee tests/files/result.txt
 ```
