@@ -1,0 +1,9 @@
+{
+  "command": "uv run pytest -q",
+  "exit_code": 0,
+  "passed": 157,
+  "duration_seconds": 11.61,
+  "python": "3.13.15",
+  "textual": "8.2.8",
+  "note": "Executed outside Codex sandbox after reproducing sandbox-only asyncio thread shutdown hang."
+}

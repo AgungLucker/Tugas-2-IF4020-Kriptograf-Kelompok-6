@@ -1,0 +1,87 @@
+{
+  "purpose": "Correctness/integrity demo; fixed public test key and IV, not security analysis",
+  "key_hex": "000102030405060708090a0b0c0d0e0f",
+  "iv_hex": "101112131415161718191a1b1c1d1e1f",
+  "cases": [
+    {
+      "input": "text.txt",
+      "mode": "ECB",
+      "plaintext_bytes": 38,
+      "envelope_bytes": 98,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "text.txt",
+      "mode": "CBC",
+      "plaintext_bytes": 38,
+      "envelope_bytes": 98,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "text.txt",
+      "mode": "CFB",
+      "plaintext_bytes": 38,
+      "envelope_bytes": 88,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "text.txt",
+      "mode": "OFB",
+      "plaintext_bytes": 38,
+      "envelope_bytes": 88,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "text.txt",
+      "mode": "CTR",
+      "plaintext_bytes": 38,
+      "envelope_bytes": 88,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "binary.bin",
+      "mode": "ECB",
+      "plaintext_bytes": 259,
+      "envelope_bytes": 322,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "binary.bin",
+      "mode": "CBC",
+      "plaintext_bytes": 259,
+      "envelope_bytes": 322,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "binary.bin",
+      "mode": "CFB",
+      "plaintext_bytes": 259,
+      "envelope_bytes": 309,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "binary.bin",
+      "mode": "OFB",
+      "plaintext_bytes": 259,
+      "envelope_bytes": 309,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    },
+    {
+      "input": "binary.bin",
+      "mode": "CTR",
+      "plaintext_bytes": 259,
+      "envelope_bytes": 309,
+      "roundtrip_equal": true,
+      "tampering_rejected": true
+    }
+  ]
+}
